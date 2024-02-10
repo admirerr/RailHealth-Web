@@ -33,7 +33,7 @@ const DoctorPagePopUp = ({ onClose }) => {
         },
       };
       const response = await axios.post(
-        "http://localhost:5000/appointment",
+        "http://localhost:5000/api/appointment",
         {
           name,
           gender,

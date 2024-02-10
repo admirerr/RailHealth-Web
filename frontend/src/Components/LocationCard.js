@@ -42,7 +42,7 @@ const LocationCard = () => {
         },
       };
       const response = await axios.post(
-        "http://localhost:5000/passenger",
+        "http://localhost:5000/api/passenger",
         {
           Berth: selectedBerth,
           Coach: selectedCoach,
