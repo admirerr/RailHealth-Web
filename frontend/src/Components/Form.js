@@ -15,20 +15,21 @@ const Form = () => {
           Have any question or query? Get in touch with us.
         </p>
         <form style={styles.contactForm}>
-        <div className="flex gap-2">
+        <div className="flex gap-2" style={{ display: "flex", width: "100%" }}>
   <input
     type="text"
     placeholder="First Name"
-    style={{ ...styles.inputField, width: "245px" }}
+    style={{ flex: 1, ...styles.inputField }}
     required
   />
   <input
     type="text"
     placeholder="Last Name"
-    style={{ ...styles.inputField, width: "245px" }}
+    style={{ flex: 1, ...styles.inputField}}
     required
   />
 </div>
+
 
           <input
             type="text"
