@@ -1,0 +1,1 @@
+export const call=<i class="fa-solid fa-circle-phone"></i>

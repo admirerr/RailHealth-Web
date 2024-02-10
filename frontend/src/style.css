@@ -1,0 +1,148 @@
+section{
+    display: block;
+}
+.app-preview{
+    position: relative;
+    font-weight:700px;
+    margin-top: 6rem;
+}
+.get-ambulance{
+    padding: 10rem 0;
+
+}
+.app-previewTop {
+    height: 20rem;
+    background:url("../src/images/wave-bg.png");
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center bottom;
+    object-fit: cover;
+   
+}
+.py-4 {
+    padding-top: 1.5rem!important;
+    padding-bottom: 1.5rem!important;
+}
+.px-2 {
+    padding-right: 0.5rem!important;
+    padding-left: 0.5rem!important;
+}
+.app-preview .card {
+    height: 25em;
+    width: 25em;
+    border-radius: 4rem;
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    place-content: center;
+}
+.app-preview .card h1 {
+    /* font-size: var(--fs-sub-heading); */
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.app-preview .card h1 {
+    background: linear-gradient(180deg, #159d89 0%, #223ea2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-size: var(--fs-main-heading); */
+    font-size: clamp(2.4rem, 5vw, 4rem);
+}
+.app-preview .card p {
+    /* font-size: var(--fs-primary-text); */
+    /* font-size: clamp(2rem, 4vw, 3rem); */
+}
+.app-previewBottom {
+    padding-bottom: 2em;
+}
+.app-previewBottom {
+    /* background: var(--primary-clr); */
+    background: #17A589;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 10rem
+}
+.app-previewBottom .heading h1 {
+    /* font-size: var(--fs-main-heading); */
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    margin-bottom: 1em;
+    font-weight: 700;
+}
+.app-preview .primary-cta {
+    display: inline-block;
+    margin: 1em 0;
+    /* font-size: var(--fs-primary-text); */
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    padding: 0.5em 1em;
+    border-radius: 10rem;
+    /* color: var(--primary-clr); */
+    color: #17A589;
+}
+.app-previewBottom .image-wrapper {
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding: 0 4em;
+    
+}
+.app-preview .image-wrapper .preview-image {
+    z-index: 1;
+}
+.app-preview .image-wrapper img {
+    width: 100%;
+}
+.app-preview .preview-image:nth-child(2) {
+    transform: scale(1.15);
+}
+.white-curve {
+    width: 100%;
+    position: absolute;
+    /* margin-top: -10em !important; */
+    bottom: 0;
+    margin-bottom: 10rem;
+}
+.white-curve img {
+    width: 100%;
+}
+.centered-text {
+    text-align: center;
+    color: grey-100;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
