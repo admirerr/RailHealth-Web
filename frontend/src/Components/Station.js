@@ -40,7 +40,6 @@ export default function Station() {
         class="card-img-top rounded-circle"
         src={DDU}
         alt="Card image cap"
-        style={{ width: "405px", height: "350px" }} // Adjust width and height as needed
       />
       <div class="card-body">
         <h5 class="card-title" style={{ textAlign: "center",fontWeight:'bold' }}>
@@ -85,7 +84,6 @@ export default function Station() {
         class="card-img-top  rounded-circle"
         src={Agra}
         alt="Card image cap"
-        style={{ width: "405px", height: "350px" }} // Adjust width and height as needed
       />
       <div class="card-body">
         <h5 class="card-title" style={{ textAlign: "center",fontWeight:'bold' }}>
