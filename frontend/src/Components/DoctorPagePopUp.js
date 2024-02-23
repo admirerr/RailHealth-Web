@@ -82,10 +82,10 @@ const DoctorPagePopUp = ({ onClose }) => {
 
       <div className="fixed inset-0 flex items-center justify-center z-50">
         <div
-          className="bg-white p-6 rounded shadow-lg z-10 w-[30%] rounded-[20px]"
+          className="bg-gray-300 p-6 rounded shadow-lg z-10 w-[30%] rounded-[20px]"
           style={{
             boxShadow: "-3px 3px 4px 0px #17A589",
-            border: "2.5px solid #17A589",
+            // border: "2.5px solid #17A589",
           }}
         >
           <h2 className="text-lg font-semibold mb-3">Who is the Patient?</h2>
@@ -112,39 +112,54 @@ const DoctorPagePopUp = ({ onClose }) => {
               Daughter
             </button>
           </div>
-          <div className="mb-4 flex gap-[2rem]">
-            <div className="relative flex">
-              <p className="text-black">Select Patient's gender</p>
-              <select className="mb-4 ml-3"
-                onChange={(e) => setGender(e.target.value)}
-              >
-                <option>Male</option>
-                <option>Female</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div>
-              <p className="text-black">DOB</p>
-            </div>
-            <div className="relative">
-              <DatePicker
-                placeholderText="Select Date"
-                selected={selectedDate}
-                onChange={handleDateChange}
-                className="w-[80%] p-2 border border-gray-300 rounded-md text-lg focus:outline-none focus:border-blue-500"
-              />
-            </div>
+          <div className="mb-4  flex-row">
+            <div className=" flex flex-col "></div>
           </div>
 
           {/* Train Input */}
           <div className="mb-4 flex gap-[2rem]">
             <div>
-              <p className="text-black">Doctor will call you on this number</p>
+              <p className="text-black mt-2 font-semibold">Select Patient gender</p>
+            </div>
+            <div>
+              <select
+                className="mb-4 ml-3 p-2 border border-gray-300 rounded-md text-lg focus:outline-none focus:border-blue-500"
+                onChange={(e) => setGender(e.target.value)}
+              >
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+
+              {/* </div> */}
+            </div>
+          </div>
+          <div className="mb-4 flex gap-[2rem]">
+            <div>
+              <p className="text-black font-semibold mt-2">Date of Birth</p>
+            </div>
+            <div>
+              <div
+                className="mb-4 ml-12"
+                onChange={(e) => setGender(e.target.value)}
+              >
+                <DatePicker
+                  placeholderText="Select Date"
+                  selected={selectedDate}
+                  onChange={handleDateChange}
+                  className="w-[80%] p-2 border border-gray-300 rounded-md text-lg focus:outline-none focus:border-blue-500"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="mb-4 flex gap-[2rem]">
+            <div>
+              {/* <p className="text-black">Doctor will call you on this number</p> */}
+              <p className="text-black font-semibold mt-2">Contact number</p>
             </div>
             <div>
               <input
                 type="text"
-                className="mt-0 p-2 border border-gray-300 rounded-md"
+                className="mt-0 p-2 border border-gray-300 rounded-md ml-10"
                 placeholder="Enter your Number"
                 onChange={(e) => setNumber(e.target.value)}
               />
@@ -152,32 +167,22 @@ const DoctorPagePopUp = ({ onClose }) => {
           </div>
           <div className="mb-4 flex gap-[2rem]">
             <div>
-              <p className="text-black">Patient's name</p>
+              <p className="text-black font-semibold mt-2">Patient's name</p>
             </div>
             <div>
               <input
                 type="text"
-                className="mt-0 p-2 border border-gray-300 rounded-md"
+                className="mt-0 p-2 border border-gray-300 rounded-md ml-12"
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Enter your Name"
               />
             </div>
           </div>
-          {/* <div className="mb-4 flex gap-[2rem]">
-            <div>
-              <p className="text-black">Patient's age</p>
-            </div>
-            <div>
-              <input
-                type="number"
-                className="mt-0 p-2 border border-gray-300 rounded-md"
-                placeholder="Enter your age"
-              />
-            </div>
-          </div> */}
+
           <div className="flex">
-            <button className="bg-blue-500 w-full text-white rounded py-2 hover:bg-blue-800" 
-               onClick={submitHandler}
+            <button
+              className="bg-blue-500 w-full text-white rounded py-2 hover:bg-blue-800"
+              onClick={submitHandler}
             >
               Submit
             </button>

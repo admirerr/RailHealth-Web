@@ -62,14 +62,17 @@ const LocationCard = () => {
     url: "https://irctc1.p.rapidapi.com/api/v1/liveTrainStatus",
     params: {
       startDay: "1",
-      trainNo: "#####",
+      trainNo: "19038",
     },
+    // headers: {
+    //   "X-RapidAPI-Key": "2b98b608e9mshf3adbd38a1acf05p112931jsn837c933da93e",
+    //   "X-RapidAPI-Host": "irctc1.p.rapidapi.com",
+    // },
     headers: {
-      "X-RapidAPI-Key": "2b98b608e9mshf3adbd38a1acf05p112931jsn837c933da93e",
+      "X-RapidAPI-Key": "4a1c9db284msh1befe348bd1f406p1ff9b0jsne6cd361f2eeb",
       "X-RapidAPI-Host": "irctc1.p.rapidapi.com",
     },
   };
-
   async function start1() {
     try {
       const response = await axios.request(options1);
@@ -87,12 +90,15 @@ const LocationCard = () => {
       params: {
         pnrNumber: pnr,
       },
+      // headers: {
+      //   "X-RapidAPI-Key": "2b98b608e9mshf3adbd38a1acf05p112931jsn837c933da93e",
+      //   "X-RapidAPI-Host": "irctc1.p.rapidapi.com",
+      // },
       headers: {
-        "X-RapidAPI-Key": "2b98b608e9mshf3adbd38a1acf05p112931jsn837c933da93e",
+        "X-RapidAPI-Key": "4a1c9db284msh1befe348bd1f406p1ff9b0jsne6cd361f2eeb",
         "X-RapidAPI-Host": "irctc1.p.rapidapi.com",
       },
     };
-
     async function start() {
       try {
         const response = await axios.request(options);
