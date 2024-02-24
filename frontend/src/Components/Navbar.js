@@ -65,23 +65,17 @@ function NavbarComponent() {
             <Nav.Link as={Link} to="/" style={{ color: "white" }}>
               Home
             </Nav.Link>
-            <Nav.Link href="#action2" style={{ color: "white" }}>
+            <Nav.Link href="#ourservices" style={{ color: "white" }}>
               Our Services
             </Nav.Link>
             <Nav.Link as={Link} to="/consultancy" style={{ color: "white" }}>
               Consult Doctors
             </Nav.Link>
-            <Nav.Link href="#action1" style={{ color: "white" }}>
-              Train Tools
-            </Nav.Link>
-            <Nav.Link href="#action1" style={{ color: "white" }}>
-              My Order
-            </Nav.Link>
             {/* <Nav.Link href="#action1" style={{color:'white'}}>Blogs</Nav.Link> */}
-            <Nav.Link href="#action1" style={{ color: "white" }}>
+            <Nav.Link href="#aboutus" style={{ color: "white" }}>
               About Us
             </Nav.Link>
-            <Nav.Link href="#action1" style={{ color: "white" }}>
+            <Nav.Link href="#contactus" style={{ color: "white" }}>
               Contact Us
             </Nav.Link>
           </Nav>

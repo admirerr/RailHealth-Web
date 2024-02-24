@@ -24,7 +24,7 @@ const GetAmbulance = () => {
     
         </div>
         <div class="app-previewBottom w-[100vw]">
-          <div class="heading text-center">
+          <div class="heading text-center" id="ourservices">
             <h1 class="text-white">Book &amp; Get Medicines and Doctor's Assitance </h1>
             <a
               href=""

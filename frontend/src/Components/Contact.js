@@ -6,7 +6,7 @@ import phone from "../images/phone.png";
 import mobielPic4 from "../images/newPic.png";
 const Contact = () => {
     return (
-        <div className="bg-gray-200 flex flex-col p-4 flex flex-col sm:flex-row items-center justify-between">
+        <div className="bg-gray-200 flex flex-col p-4 flex flex-col sm:flex-row items-center justify-between" id="aboutus">
           
             <div className="max-w-lg mb-4 sm:mb-0">
                 <h1 className="text-3xl font-bold mb-4 ">Download the RailHealth app!</h1>

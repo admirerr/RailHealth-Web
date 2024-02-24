@@ -9,7 +9,7 @@ const Form = () => {
       <div className="flex w-1/2">
         <img src={contact} width="100%" height="100%" padding="3rem" alt="" />
       </div>
-      <div style={styles.contactContainer} className="w-1/2">
+      <div style={styles.contactContainer} className="w-1/2" id="contactus">
         <h2 style={styles.sectionTitle}>Get in Touch</h2>
         <p style={styles.sectionSubtitle}>
           Have any question or query? Get in touch with us.
