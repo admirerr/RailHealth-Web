@@ -6,7 +6,7 @@ import { faDotCircle } from "@fortawesome/free-regular-svg-icons"; // Use the ap
 import { call } from "./icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Stations from "./Station";
-import main_train from "../images/main_train.png";
+import main_train from "../images/demo_train.png";
 const MainPage = () => {
   return (
     <div>
@@ -60,13 +60,13 @@ const MainPage = () => {
           </div>
           <div></div>
         </div>
-        <div className="lg:w-[65%] w-full ml-2">
+        <div className="lg:w-[65%] w-full ml-5">
         <div className="header-image">
           <img
             src={main_train}
             className="img-fluid rounded-lg" // Added rounded-lg class for rounded corners
             alt="banner"
-            style={{ width: "100%" }} // Set width to 100% for increased width
+            style={{ width: "90%" }} // Set width to 100% for increased width
           />
         </div>
       </div>
