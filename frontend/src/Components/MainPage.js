@@ -60,7 +60,7 @@ const MainPage = () => {
           </div>
           <div></div>
         </div>
-        <div className="lg:w-[65%] w-full ml-5">
+        <div className="lg:w-[65%] w-full ml-1">
         <div className="header-image">
           <img
             src={main_train}
