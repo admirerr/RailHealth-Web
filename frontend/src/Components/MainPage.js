@@ -66,7 +66,7 @@ const MainPage = () => {
             src={main_train}
             className="img-fluid rounded-lg" // Added rounded-lg class for rounded corners
             alt="banner"
-            style={{ width: "90%" }} // Set width to 100% for increased width
+            style={{ width: "100%" }} // Set width to 100% for increased width
           />
         </div>
       </div>
