@@ -36,15 +36,16 @@ const Popup = ({ onClose, trainNo, departureDate }) => {
           {/* Calendar */}
           <div className="mb-4 flex gap-[2rem]">
             <div>
-              <h5 className="mt-2 text-2xl font-semibold">Date</h5>
+              <h5 className="mt-2 text-2xl">Date</h5>
             </div>
             <div className="relative">
               <DatePicker
-                selected={selectedDate}
-                onChange={handleDateChange}
-                className="w-[80%] p-2 border border-gray-300 rounded-md text-lg focus:outline-none focus:border-blue-500"
+                  selected={selectedDate}
+                  onChange={handleDateChange}
+                  className="w-[90%] p-2 border border-gray-300 rounded-md text-lg focus:outline-none focus:border-blue-500" // Increased width to 90%
               />
             </div>
+
           </div>
 
           {/* Train Input */}
@@ -62,7 +63,7 @@ const Popup = ({ onClose, trainNo, departureDate }) => {
             </div>
           </div>
 
-          <h3 className=" text-xl font-bold mb-4 text-center">
+          <h3 className=" text-2xl font-bold text-center mb-4">
             Select your Boarding Station
           </h3>
 
