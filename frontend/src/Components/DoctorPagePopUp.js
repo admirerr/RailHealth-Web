@@ -89,26 +89,21 @@ const DoctorPagePopUp = ({ onClose }) => {
           }}
         >
           <h2 className="text-lg font-semibold mb-3">Who is the Patient?</h2>
-          <div className="flex gap-3 flex-row overflow-x-scroll mb-4">
-            <button className="bg-blue-500 w-full text-white rounded px-3 py-1">
+          <div className="flex gap-2 flex-row overflow-x-scroll mb-4">
+            <button className="bg-green-600 w-full text-white rounded px-2 py-1">
               Me
             </button>
-            <button className="bg-blue-500 w-full text-white rounded px-3 py-1">
-              Wife
-            </button>
-            <button className="bg-blue-500 w-full text-white rounded px-3 py-1">
-              Husband
-            </button>
-            <button className="bg-blue-500 w-full text-white rounded px-3 py-1">
+            
+            <button className="bg-blue-400 w-full text-white rounded px-2 py-1">
               Father
             </button>
-            <button className="bg-blue-500 w-full text-white rounded px-3 py-1">
+            <button className="bg-blue-400 w-full text-white rounded px-2 py-1">
               Mother
             </button>
-            <button className="bg-blue-500 w-full text-white rounded px-3 py-1">
+            <button className="bg-blue-400 w-full text-white rounded px-2 py-1">
               Son
             </button>
-            <button className="bg-blue-500 w-full text-white rounded px-3 py-1">
+            <button className="bg-blue-400 w-full text-white rounded px-2 py-1">
               Daughter
             </button>
           </div>
@@ -117,67 +112,72 @@ const DoctorPagePopUp = ({ onClose }) => {
           </div>
 
           {/* Train Input */}
+          <div className="mb-4 flex gap-[1rem]">
+            <div>
+              <p className="text-black font-semibold mt-2">Patient's name</p>
+            </div>
+            <div>
+              <input
+              style={{ width: "210px" }} // Adjust the width as needed
+                type="text"
+                className="mt-0 p-2 border border-gray-300 rounded-md ml-10"
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Enter your Name"
+              />
+            </div>
+          </div>
           <div className="mb-4 flex gap-[2rem]">
             <div>
-              <p className="text-black mt-2 font-semibold">Select Patient gender</p>
+              <p className="text-black mt-2  font-semibold">Gender</p>
             </div>
             <div>
-              <select
-                className="mb-4 ml-3 p-2 border border-gray-300 rounded-md text-lg focus:outline-none focus:border-blue-500"
-                onChange={(e) => setGender(e.target.value)}
-              >
-                <option>Male</option>
-                <option>Female</option>
-              </select>
+    <select
+        className="mb-4 ml-20 p-2 border border-gray-300 rounded-md text-lg focus:outline-none focus:border-blue-500"
+        onChange={(e) => setGender(e.target.value)}
+        style={{ width: "207px" }} // Custom width style added
+    >
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+</div>
 
-              {/* </div> */}
-            </div>
+
           </div>
           <div className="mb-4 flex gap-[2rem]">
             <div>
               <p className="text-black font-semibold mt-2">Date of Birth</p>
             </div>
             <div>
-              <div
-                className="mb-4 ml-12"
-                onChange={(e) => setGender(e.target.value)}
-              >
-                <DatePicker
-                  placeholderText="Select Date"
-                  selected={selectedDate}
-                  onChange={handleDateChange}
-                  className="w-[80%] p-2 border border-gray-300 rounded-md text-lg focus:outline-none focus:border-blue-500"
-                />
-              </div>
-            </div>
+            <div className="mb-4 ml-10">
+    <DatePicker
+        placeholderText="Select Date"
+        selected={selectedDate}
+        onChange={handleDateChange}
+        className="p-1 border border-gray-300 rounded-md text-lg focus:outline-none focus:border-blue-500"
+        style={{ width: "100px" }} // Adjust the width as needed
+    />
+</div>
+
+</div>
+
           </div>
-          <div className="mb-4 flex gap-[2rem]">
+          <div className="mb-4 flex gap-[1rem]">
             <div>
               {/* <p className="text-black">Doctor will call you on this number</p> */}
               <p className="text-black font-semibold mt-2">Contact number</p>
             </div>
             <div>
-              <input
-                type="text"
-                className="mt-0 p-2 border border-gray-300 rounded-md ml-10"
-                placeholder="Enter your Number"
-                onChange={(e) => setNumber(e.target.value)}
-              />
+                <input
+                style={{ width: "210px" }} // Adjust the width as needed
+                    type="text"
+                    className="mt-0 p-2 border border-gray-300 rounded-md ml-7 " // Adjusted width to 64 pixels
+                    placeholder="Enter your Number"
+                    onChange={(e) => setNumber(e.target.value)}
+                />
             </div>
+
           </div>
-          <div className="mb-4 flex gap-[2rem]">
-            <div>
-              <p className="text-black font-semibold mt-2">Patient's name</p>
-            </div>
-            <div>
-              <input
-                type="text"
-                className="mt-0 p-2 border border-gray-300 rounded-md ml-12"
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Enter your Name"
-              />
-            </div>
-          </div>
+          
 
           <div className="flex">
             <button
@@ -189,7 +189,7 @@ const DoctorPagePopUp = ({ onClose }) => {
           </div>
           {/* Close Button */}
           <button
-            className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+            className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-red-600"
             onClick={onClose}
           >
             Close

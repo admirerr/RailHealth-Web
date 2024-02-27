@@ -104,11 +104,12 @@ const Consultancy = () => {
                     <ul>
                       <li>MBBS</li>
                       <li>4 year Experience</li>
-                      <li>Dentist</li>
+                      <li>Physician</li>
                     </ul>
                   </div>
                   <div className="flex justify-center align-items-center lg:w-2/4 sm:w-auto">
-                    <button className="flex m-0 p-2 justify-center align-content-center  text-white bg-indigo-500 border-0 w-57 focus:outline-none hover:bg-indigo-600 rounded text-md ">
+                    <button className="flex m-0 p-2 justify-center align-content-center  text-white bg-indigo-500 border-0 w-57 focus:outline-none hover:bg-indigo-600 rounded text-md "
+                    onClick={handleOpenPopup}>
                       Consult Now
                     </button>
                   </div>
@@ -136,7 +137,8 @@ const Consultancy = () => {
                     </ul>
                   </div>
                   <div className="flex justify-center align-items-center lg:w-2/4 sm:w-auto">
-                    <button className="flex m-0 p-2 justify-center align-content-center  text-white bg-indigo-500 border-0 w-57 focus:outline-none hover:bg-indigo-600 rounded text-md ">
+                    <button className="flex m-0 p-2 justify-center align-content-center  text-white bg-indigo-500 border-0 w-57 focus:outline-none hover:bg-indigo-600 rounded text-md "
+                    onClick={handleOpenPopup}>
                       Consult Now
                     </button>
                   </div>

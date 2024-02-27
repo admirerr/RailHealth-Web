@@ -24,8 +24,8 @@ export default function About() {
     <div className="px-2" style={aboutStyle}>
       <h2>About Us</h2>
       <p>
-        RailHealth is a platform that provides health-based facilities to the passengers travelling by the train. We provide you with the complete set of health
-        services while you are on a train journey. We also facilitate customers with other necessary services which include Direct Medicine order, Online Doctor consultancy and much more.
+        RailHealth is a platform that provides health-based facilities to the passengers travelling by the train. We provide passengers with the complete set of health
+        services while they are on a train journey. We also facilitate customers with other necessary services which include Direct Medicine order, Online Doctor consultancy and much more.
       </p>
       <div style={learnMoreStyle} sectionId="contactSection">
         LEARN MORE
