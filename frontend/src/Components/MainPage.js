@@ -60,13 +60,13 @@ const MainPage = () => {
           </div>
           <div></div>
         </div>
-        <div className="lg:w-[65%] w-full ml-1">
+        <div className="lg:w-[65%] w-full ml-5" style={{ marginTop: "4rem" }}>
         <div className="header-image">
           <img
             src={main_train}
             className="img-fluid rounded-lg" // Added rounded-lg class for rounded corners
             alt="banner"
-            style={{ width: "100%" }} // Set width to 100% for increased width
+            style={{ width: "100%", height: "538px" }} // Custom width and height
           />
         </div>
       </div>
